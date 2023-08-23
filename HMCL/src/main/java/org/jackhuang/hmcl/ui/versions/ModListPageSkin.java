@@ -183,7 +183,7 @@ class ModListPageSkin extends SkinBase<ModListPage> {
         label.prefWidthProperty().bind(pane.widthProperty().add(-100));
 
         FXUtils.onChangeAndOperate(skinnable.moddedProperty(), modded -> {
-            pane.getChildren().setAll(label);
+            pane.getChildren().setAll(root);
         });
 
         getChildren().setAll(pane);
